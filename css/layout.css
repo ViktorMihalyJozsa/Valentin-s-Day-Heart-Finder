@@ -55,7 +55,7 @@ header {
             left:               2fr;
             bottom:             0vh;
 
-            width:              45vh;  /*32.4vh;  /*  FHD-350px=32.4vh (img:360px)  */
+            width:              45vh;  /*  FHD-486px=45vh   (img:500px)  */
             height:             45vh;  /*  FHD-486px=45vh   (img:500px)  */
 
             background-image:   url("../assets/header-bottom-logo.png");
@@ -114,7 +114,7 @@ header {
                 margin-top:         5vh;  /*0vh;*/
                 margin-right:       -10vh;     /*  -2vh-8vh(canvas"padding")= -10vh                 */
                 width:              17.777vh;  /*  FHD-192px=17.777vh (img:240px) 1fr = 10% = 10vw  */
-                height:             37.037vh;  /*  FHD-400px=37.037vh (img:500px)                   */
+                height:             37.037vh;  /*  FHD-400px=37.037vh (img:500px)                  */
 
                 background-image:   url("../assets/header-top-logo.png");
                 background-size:    cover;
@@ -129,8 +129,8 @@ header {
                 left:               2fr;
                 bottom:             -7vh;
 
-                width:              45vh;  /*32.4vh;  /*  FHD-350px=32.4vh (img:360px)  */
-                height:             45vh;    /*  FHD-486px=45vh   (img:500px)  */
+                width:              45vh;  /*  FHD-486px=45vh   (img:500px)  */
+                height:             45vh;  /*  FHD-486px=45vh   (img:500px)  */
     
                 background-image:   url("../assets/header-bottom-logo.png");
                 background-size:    cover;
@@ -205,7 +205,7 @@ header {
                 left:               0vh;
                 bottom:             0vh;
 
-                width:              38.25vh;  /*27.54vh;  /*  FHD-350px=32.4vh*0.85=27.54vh (img:360px)  */
+                width:              38.25vh;  /*  FHD-486px=45vh*0.85=38.25vh (img:500px)  */
                 height:             38.25vh;  /*  FHD-486px=45vh*0.85=38.25vh (img:500px)  */
 
                 background-image:   url("../assets/header-bottom-logo.png");
@@ -364,8 +364,8 @@ footer {
 
         margin-top:         -18vh;
         margin-right:       -18vh;
-        width:              32vh;  /*25.6vh;  /* 400px */
-        height:             32vh;    /* 500px */
+        width:              32vh;   /* 500px */
+        height:             32vh;   /* 500px */
 
         background-image:   url("../assets/footer-logo.png");
         background-size:    cover;
@@ -398,8 +398,8 @@ footer {
     
             margin-top:         -16vh;
             margin-right:       -20vh;
-            width:              32vh;  /*25.6vh;  /* 400px */
-            height:             32vh;    /* 500px */
+            width:              32vh;   /* 500px */
+            height:             32vh;   /* 500px */
     
             background-image:   url("../assets/footer-logo.png");
             background-size:    cover;
