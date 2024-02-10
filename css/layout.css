@@ -224,37 +224,45 @@ header {
 \*  ========================================================================  */
 
 main {
-    grid-area: main;
+    grid-area:            main;
 
-    display:           flex;
-    justify-content:   center;
-    align-items:       center;
+    display:              flex;
+    justify-content:      center;
+    align-items:          center;
 
-    width:             3fr;
-    height:            83vh;
+    width:                3fr;
+    height:               83vh;
 
     background-image:     url("../assets/game-background.png");
     background-size:      cover;
     background-repeat:    no-repeat;
     background-position:  right;
+
+    border-right:         1px solid red;
+    border-left:          1px solid red;
+    box-shadow:           1vh 1vh 1vh rgba(0, 0, 0, 0.5);
 }
 
 
 @media(max-width: 1025px) {
     main {
-        grid-area: main;
+        grid-area:            main;
     
-        display:          flex;
-        justify-content:  center;
-        align-items:      center;
+        display:              flex;
+        justify-content:      center;
+        align-items:          center;
     
-        width:            3fr;
-        height:           auto;
-
+        width:                3fr;
+        height:               83vh;
+    
         background-image:     url("../assets/game-background.png");
         background-size:      cover;
         background-repeat:    no-repeat;
         background-position:  right;
+    
+        border-right:         1px solid red;
+        border-left:          1px solid red;
+        box-shadow:           1vh 1vh 1vh rgba(0, 0, 0, 0.5);
     }
 }
 
@@ -274,6 +282,10 @@ main {
         background-size:      cover;
         background-repeat:    no-repeat;
         background-position:  right;
+
+        border-right:         none;
+        border-left:          none;
+        box-shadow:           none;
     }
 }
 
@@ -346,14 +358,17 @@ main {
 \*  ========================================================================  */
 
 footer {
-    grid-area:         footer;
+    grid-area:     footer;
 
-    width:             auto;
-    height:            16vh;  /*auto;*/
-    padding:           1vh 0vh 0vh 8vh;
+    width:         auto;
+    height:        16vh;  /*auto;*/
+    padding:       1vh 0vh 0vh 8vh;
 
-    background-color:  red;
-    text-align:        left;
+    border-right:  1px solid red;
+    border-left:   1px solid red;
+    box-shadow:    1vh 1vh 1vh rgba(0, 0, 0, 0.5);
+
+    text-align:    left;
 }
 
     .footer-text {
@@ -363,9 +378,13 @@ footer {
         z-index:  30;
     }
 
-    .audio {
+    .footer-audio {
         width:   36vh;
         height:  3vh;
+
+        border: 1px solid rgba(255, 0, 0, 0.9);
+        border-radius: 3vh;
+        box-shadow:    1vh 1vh 1vh rgba(0, 0, 0, 0.3);
 
         z-index: 30;
     }
@@ -388,14 +407,17 @@ footer {
 
 @media(max-width: 1025px) {
     footer {
-        grid-area:         footer;
+        grid-area:     footer;
     
-        width:             auto;
-        height:            auto;
-        padding:           3vh 0vh 0vh 8vh;
+        width:         auto;
+        height:        16vh;  /*auto;*/
+        padding:       1vh 0vh 0vh 8vh;
     
-        background-color:  red;
-        text-align:        left;
+        border-right:  1px solid red;
+        border-left:   1px solid red;
+        box-shadow:    1vh 1vh 1vh rgba(0, 0, 0, 0.5);
+    
+        text-align:    left;
     }
     
         .footer-text {
@@ -405,9 +427,13 @@ footer {
             z-index:  30;
         }
     
-        .audio {
+        .footer-audio {
             width:   36vh;
             height:  3vh;
+    
+            border: 1px solid rgba(255, 0, 0, 0.9);
+            border-radius: 3vh;
+            box-shadow:    1vh 1vh 1vh rgba(0, 0, 0, 0.3);
     
             z-index: 30;
         }
@@ -415,7 +441,7 @@ footer {
         .footer-image {
             float:              right;
     
-            margin-top:         -27vh;
+            margin-top:         -32vh;
             margin-right:       -18vh;
             width:              32vh;   /* 500px */
             height:             32vh;   /* 500px */
@@ -437,7 +463,10 @@ footer {
         height:            auto;
         padding:           2vh 0vh 0vh 2vh;
 
-        background-color:  red;
+        border-right:         none;
+        border-left:          none;
+        box-shadow:           none;
+
         text-align:        left;
     }
     
@@ -448,9 +477,13 @@ footer {
             z-index:  30;
         }
 
-        .audio {
+        .footer-audio {
             width:   36vh;
             height:  3vh;
+    
+            border: 1px solid rgba(255, 0, 0, 0.9);
+            border-radius: 3vh;
+            box-shadow:    1vh 1vh 1vh rgba(0, 0, 0, 0.3);
     
             z-index: 30;
         }
