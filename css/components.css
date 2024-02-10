@@ -8,6 +8,7 @@ h1, h2 {
     font-weight:     bold;
     color:           rgba(198, 13, 13, 1);
     text-shadow:     2px 2px rgba(255, 255, 255, 0.75), -1px -1px #444;
+    
     z-index:         20;
   }
 
@@ -19,6 +20,7 @@ h1, h2 {
     letter-spacing:  1px;
     color:           rgba(102, 6, 6, 0.75);
     text-shadow:     1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
+
     z-index:         20;
   } 
 
@@ -29,6 +31,7 @@ h1, h2 {
     font-weight:      bold;
     color:            rgba(198, 13, 13, 1);
     text-shadow:      1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
+
     z-index:          20;
   }
 
@@ -41,6 +44,7 @@ h1, h2 {
         color:           rgba(198, 13, 13, 1);
         text-shadow:     1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
         transition:      all 0.5s ease-in-out;
+
         z-index:         20;
       }
 
@@ -53,6 +57,7 @@ h1, h2 {
       font-weight:      normal;
       color:            rgba(198, 13, 13, 1);
       text-shadow:      1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
+      
       z-index:          20;
   }
 

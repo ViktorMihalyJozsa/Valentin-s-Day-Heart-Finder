@@ -15,13 +15,16 @@ header {
     .header-text {
         width:       auto;
         height:      18vh;
-
         text-align:  left;
+
+        z-index:     20;
     }
 
     .header-image {
-        width:   auto;
-        height:  72vh;
+        width:    auto;
+        height:   72vh;
+
+        z-index:  10;
     }
 
         .header-top-image-text {
@@ -410,7 +413,7 @@ footer {
         .footer-image {
             float:              right;
     
-            margin-top:         -27vh;
+            margin-top:         -23vh;
             margin-right:       -18vh;
             width:              32vh;   /* 500px */
             height:             32vh;   /* 500px */
@@ -430,7 +433,7 @@ footer {
     
         width:             auto;
         height:            auto;
-        padding:           3vh 0vh 0vh 2vh;
+        padding:           2vh 0vh 0vh 2vh;
 
         background-color:  red;
         text-align:        left;
@@ -442,11 +445,18 @@ footer {
 
             z-index:  20;
         }
+
+        .audio {
+            width:   36vh;
+            height:  3vh;
+    
+            z-index: 20;
+        }
     
         .footer-image {
             float:              right;
     
-            margin-top:         -27vh;
+            margin-top:         -23vh;
             margin-right:       0vh;
             width:              16.6vh;  /*  19.52vh*0.85=16.592vh (img:305px)  */
             height:             27.2vh;  /*  32vh*0.85=27.2vh      (img:500px)  */
