@@ -7,7 +7,7 @@ h1, h2 {
     letter-spacing:  1vh;
     font-weight:     bold;
     color:           rgba(255, 0, 0, 0.9);
-    text-shadow:     1vh 1vh 1vh rgba(0, 0, 0, 0.5), -1px -1px #444;
+    text-shadow:     1vh 1vh 1vh rgba(68, 68, 68, 1), -1px -1px #ffffffbf;
     
     z-index:         20;
   }
@@ -16,10 +16,10 @@ h1, h2 {
       h2 {text-align: right;} 
 
   h3, p {
-    font-size:       max(14px, 2.777vh);  /*  min.:14px - ca.:30px  */
+    font-size:       max(13px, 2.5vh);  /*  min.:13px - ca.:30px  */
     letter-spacing:  1px;
     color:           rgba(102, 6, 6, 0.75);
-    text-shadow:     1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
+    text-shadow:     1px 1px 1px rgba(68, 68, 68, 1), -1px -1px #ffffffbf;
 
     z-index:         20;
   } 
@@ -30,7 +30,7 @@ h1, h2 {
     letter-spacing:   2px;
     font-weight:      bold;
     color:            rgba(198, 13, 13, 1);
-    text-shadow:      1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
+    text-shadow:      1px 1px 1px rgba(68, 68, 68, 1), -1px -1px #ffffffbf;
 
     z-index:          20;
   }
@@ -42,7 +42,7 @@ h1, h2 {
         letter-spacing:  4px;
         font-weight:     bold;
         color:           rgba(198, 13, 13, 1);
-        text-shadow:     1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
+        text-shadow:     1px 1px 1px rgba(68, 68, 68, 1), -1px -1px #ffffffbf;
         transition:      all 0.5s ease-in-out;
 
         z-index:         20;
@@ -56,7 +56,7 @@ h1, h2 {
       letter-spacing:   1px;
       font-weight:      normal;
       color:            rgba(198, 13, 13, 1);
-      text-shadow:      1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
+      text-shadow:      1px 1px 1px rgba(68, 68, 68, 1), -1px -1px #ffffffbf;
       
       z-index:          20;
   }
@@ -69,7 +69,7 @@ h1, h2 {
 body {background-color: pink; z-index: 0;}
 footer {background-color: red; z-index: 0;}
 
-h1, h2 {background-color: lightblue; z-index: 0;}
+/*h1, h2 {background-color: lightblue; z-index: 0;}
 
 header {background-color: blue; z-index: 0;}
     .header-text {background-color: lightcyan; z-index: 0;}
