@@ -6,8 +6,8 @@ h1, h2 {
     font-size:       6vh;  /*max(42px, 6vh);  /*  min.:40px - ca.:100px  */
     letter-spacing:  1vh;
     font-weight:     bolder;
-    color:           rgba(255, 0, 0, 0.75);
-    text-shadow:     1vh 1vh 1vh rgba(68, 68, 68, 1), -1px -1px #ffffffbf;
+    color:           rgb(139, 0, 0, 1);
+    text-shadow:     1vh 1vh 1vh rgba(68, 68, 68, 1), -2px -2px red;
     
     z-index:         20;
   }
@@ -16,10 +16,10 @@ h1, h2 {
       h2 {text-align: right;} 
 
   h3, p {
-    font-size:       max(12px, 2.5vh);  /*  min.:12px - ca.:30px  */
+    font-size:       max(12px, 2.75vh);  /*  min.:12px - ca.:30px  */
     letter-spacing:  1px;
-    color:           rgba(102, 6, 6, 0.75);
-    text-shadow:     1px 1px 1px rgba(68, 68, 68, 1), -1px -1px #ffffffbf;
+    color:           rgba(102, 6, 6, 1);
+    text-shadow:     1px 1px 1px rgba(68, 68, 68, 1), -1px -1px #ffffffdf;
 
     z-index:         20;
   } 
