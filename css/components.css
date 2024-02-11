@@ -5,8 +5,8 @@
 h1, h2 {
     font-size:       6vh;  /*max(42px, 6vh);  /*  min.:40px - ca.:100px  */
     letter-spacing:  1vh;
-    font-weight:     bold;
-    color:           rgba(255, 0, 0, 0.9);
+    font-weight:     bolder;
+    color:           rgba(255, 0, 0, 0.75);
     text-shadow:     1vh 1vh 1vh rgba(68, 68, 68, 1), -1px -1px #ffffffbf;
     
     z-index:         20;
@@ -69,7 +69,7 @@ h1, h2 {
 body {background-color: pink; z-index: 0;}
 footer {background-color: red; z-index: 0;}
 
-/*h1, h2 {background-color: lightblue; z-index: 0;}
+h1, h2 {background-color: lightblue; z-index: 0;}
 
 header {background-color: blue; z-index: 0;}
     .header-text {background-color: lightcyan; z-index: 0;}
