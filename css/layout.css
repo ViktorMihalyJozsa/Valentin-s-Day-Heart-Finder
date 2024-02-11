@@ -159,31 +159,31 @@ header {
             .header-top-image-text {
                 float:    left;
     
-                width:    100%;  /*42vh;  /*  FHD=456px=42.222vh  2fr = 20% = 20vw 
+                width:    37vh;  /*  FHD=456px=42.222vh  2fr = 20% = 20vw 
                                          ~ MINUS: .header-padding(2vh); PLUS: .myCanvas"padding"(ca.:8vh); !!!  */
                 height:   37vh;  /*  FHD-400px=(37.685vh)37vh                                                   */
             }
     
             .header-top-image {
-                /*float:              right;
+                float:              right;
     
                 margin-top:         0vh;
                 margin-right:       -2vh;     /*  -2vh-8vh(canvas"padding")= -10vh                 */
-                width:              0vh;  /*17.777vh;  /*  FHD-192px=17.777vh (img:240px) 1fr = 10% = 10vw  */
-                height:             0vh;  /*37.037vh;  /*  FHD-400px=37.037vh (img:500px)                   */
+                width:              17.777vh;  /*  FHD-192px=17.777vh (img:240px) 1fr = 10% = 10vw  */
+                height:             37.037vh;  /*  FHD-400px=37.037vh (img:500px)                   */
     
-                background-image:   none;  /*url("../assets/header-top-logo.png");
+                background-image:   url("../assets/header-top-logo.png");
                 background-size:    cover;
                 background-repeat:  no-repeat;
                 
-                z-index:            20;*/
+                z-index:            20;
             }
     
             .header-bottom-image {
                 position:           absolute;
                 float:              left;
                 left:               2fr;
-                bottom:             0vh;
+                bottom:             -10vh;
     
                 width:              45vh;  /*  FHD-486px=45vh   (img:500px)  */
                 height:             45vh;  /*  FHD-486px=45vh   (img:500px)  */
@@ -508,7 +508,7 @@ footer {
         .footer-text {
             grid-area:   footer-text;
     
-            width:       2fr;
+            width:       auto;  /*2fr;*/
             height:      6vh;
             padding:     0.5vh 0vh 0.5vh 2vh;
             text-align:  left;
@@ -519,7 +519,7 @@ footer {
         .footer-audio {
             grid-area:   footer-audio;
     
-            width:       2fr;
+            width:       auto;  /*2fr;*/
             height:      10vh;
             padding:     0vh 2vh 0vh 2vh;
             text-align:  right;
@@ -528,7 +528,7 @@ footer {
         }
     
             audio {
-                width:          2fr;
+                width:          100%;  /*2fr;*/
                 height:         3vh;
         
                 border:         1px solid rgba(255, 0, 0, 0.9);
