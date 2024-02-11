@@ -16,7 +16,7 @@ h1, h2 {
       h2 {text-align: right;} 
 
   h3, p {
-    font-size:       max(13px, 2.5vh);  /*  min.:13px - ca.:30px  */
+    font-size:       max(12px, 2.5vh);  /*  min.:12px - ca.:30px  */
     letter-spacing:  1px;
     color:           rgba(102, 6, 6, 0.75);
     text-shadow:     1px 1px 1px rgba(68, 68, 68, 1), -1px -1px #ffffffbf;
