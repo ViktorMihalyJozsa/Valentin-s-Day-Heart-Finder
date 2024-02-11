@@ -358,48 +358,67 @@ main {
 \*  ========================================================================  */
 
 footer {
-    grid-area:     footer;
+    grid-area:              footer;
 
-    width:         auto;
-    height:        16vh;  /*auto;*/
-    padding:       1vh 0vh 0vh 8vh;
+    display:                grid;
+    grid-template-columns:  2fr 1fr;
+    grid-template-rows:     auto;
+    grid-template-areas: 
+        "footer-text footer-image"
+        "footer-audio footer-image";
 
-    border-right:  1px solid red;
-    border-left:   1px solid red;
-    box-shadow:    1vh 1vh 1vh rgba(0, 0, 0, 0.5);
-
-    text-align:    left;
+    border-right:           1px solid red;
+    border-left:            1px solid red;
+    box-shadow:             1vh 1vh 1vh rgba(0, 0, 0, 0.5);
 }
 
     .footer-text {
-        width:    auto;
-        height:   auto;
+        grid-area:   footer-text;
 
-        z-index:  30;
+        width:       2fr;
+        height:      6vh;
+        padding:     0.5vh 0vh 0.5vh 2vh;
+        text-align:  left;
+
+        z-index:     30;
     }
 
     .footer-audio {
-        width:   36vh;
-        height:  3vh;
+        grid-area:   footer-audio;
 
-        border: 1px solid rgba(255, 0, 0, 0.9);
-        border-radius: 3vh;
-        box-shadow:    1vh 1vh 1vh rgba(0, 0, 0, 0.3);
+        width:       2fr;
+        height:      10vh;
+        padding:     0vh 2vh 0vh 2vh;
+        text-align:  right;
 
-        z-index: 30;
+        z-index:     30;
     }
 
-    .footer-image {
-        float:              right;
+        audio {
+            width:          2fr;
+            height:         3vh;
+    
+            border:         1px solid rgba(255, 0, 0, 0.9);
+            border-radius:  3vh;
+            box-shadow:     1vh 1vh 1vh rgba(0, 0, 0, 0.3);
+    
+            z-index:        30;
+        }
 
-        margin-top:         -32vh;
-        margin-right:       -18vh;
-        width:              32vh;   /* 500px */
-        height:             32vh;   /* 500px */
+    .footer-image {
+        grid-area:          footer-image;
+        grid-column:        2;
+        grid-row:           1 / 3;
+
+        width:              32vh;  /* 500px */
+        height:             32vh;  /* 500px */
+        margin-top:         -15vh;
+        margin-right:       -15vh;
+        /*transform:          translate(8vw, -16vh);*/
 
         background-image:   url("../assets/footer-logo.png");
-        background-size:    cover;
         background-repeat:  no-repeat;
+        background-size:    cover;
 
         z-index:            20;
     }
@@ -407,48 +426,67 @@ footer {
 
 @media(max-width: 1025px) {
     footer {
-        grid-area:     footer;
+        grid-area:              footer;
     
-        width:         auto;
-        height:        16vh;  /*auto;*/
-        padding:       1vh 0vh 0vh 8vh;
+        display:                grid;
+        grid-template-columns:  2fr 1fr;
+        grid-template-rows:     auto;
+        grid-template-areas: 
+            "footer-text footer-image"
+            "footer-audio footer-image";
     
-        border-right:  1px solid red;
-        border-left:   1px solid red;
-        box-shadow:    1vh 1vh 1vh rgba(0, 0, 0, 0.5);
-    
-        text-align:    left;
+        border-right:           1px solid red;
+        border-left:            1px solid red;
+        box-shadow:             1vh 1vh 1vh rgba(0, 0, 0, 0.5);
     }
     
         .footer-text {
-            width:    auto;
-            height:   auto;
+            grid-area:   footer-text;
     
-            z-index:  30;
+            width:       2fr;
+            height:      6vh;
+            padding:     0.5vh 0vh 0.5vh 2vh;
+            text-align:  left;
+    
+            z-index:     30;
         }
     
         .footer-audio {
-            width:   36vh;
-            height:  3vh;
+            grid-area:   footer-audio;
     
-            border: 1px solid rgba(255, 0, 0, 0.9);
-            border-radius: 3vh;
-            box-shadow:    1vh 1vh 1vh rgba(0, 0, 0, 0.3);
+            width:       2fr;
+            height:      10vh;
+            padding:     0vh 2vh 0vh 2vh;
+            text-align:  right;
     
-            z-index: 30;
+            z-index:     30;
         }
     
-        .footer-image {
-            float:              right;
+            audio {
+                width:          2fr;
+                height:         3vh;
+        
+                border:         1px solid rgba(255, 0, 0, 0.9);
+                border-radius:  3vh;
+                box-shadow:     1vh 1vh 1vh rgba(0, 0, 0, 0.3);
+        
+                z-index:        30;
+            }
     
-            margin-top:         -32vh;
-            margin-right:       -18vh;
-            width:              32vh;   /* 500px */
-            height:             32vh;   /* 500px */
+        .footer-image {
+            grid-area:          footer-image;
+            grid-column:        2;
+            grid-row:           1 / 3;
+    
+            width:              32vh;  /* 500px */
+            height:             32vh;  /* 500px */
+            margin-top:         -15vh;
+            margin-right:       -15vh;
+            /*transform:          translate(8vw, -16vh);*/
     
             background-image:   url("../assets/footer-logo.png");
-            background-size:    cover;
             background-repeat:  no-repeat;
+            background-size:    cover;
     
             z-index:            20;
         }
@@ -456,50 +494,69 @@ footer {
 
 
 @media(max-width: 768px) {
-    footer {
-        grid-area:         footer;
-    
-        width:             auto;
-        height:            auto;
-        padding:           2vh 0vh 0vh 2vh;
+        footer {
+            grid-area:              footer;
+        
+            display:                grid;
+            grid-template-columns:  3fr;
+            grid-template-rows:     auto;
+            grid-template-areas: 
+                "footer-text footer-image"
+                "footer-audio footer-image";
 
-        border-right:         none;
-        border-left:          none;
-        box-shadow:           none;
-
-        text-align:        left;
-    }
-    
-        .footer-text {
-            width:    auto;
-            height:   auto;
-
-            z-index:  30;
+            border-right:           none;
+            border-left:            none;
+            box-shadow:             none;
         }
-
-        .footer-audio {
-            width:   36vh;
-            height:  3vh;
-    
-            border: 1px solid rgba(255, 0, 0, 0.9);
-            border-radius: 3vh;
-            box-shadow:    1vh 1vh 1vh rgba(0, 0, 0, 0.3);
-    
-            z-index: 30;
-        }
-    
-        .footer-image {
-            float:              right;
-    
-            margin-top:         -26vh;
-            margin-right:       0vh;
-            width:              16.6vh;  /*  19.52vh*0.85=16.592vh (img:305px)  */
-            height:             27.2vh;  /*  32vh*0.85=27.2vh      (img:500px)  */
-    
-            background-image:   url("../assets/footer-logo-mobil.png");
-            background-size:    cover;
-            background-repeat:  no-repeat;
-
-            z-index:            20;
-        }
+        
+            .footer-text {
+                grid-area:   footer-text;
+        
+                width:       auto;
+                height:      6vh;
+                padding:     0.5vh 0vh 0.5vh 2vh;
+                text-align:  left;
+        
+                z-index:     30;
+            }
+        
+            .footer-audio {
+                grid-area:   footer-audio;
+        
+                width:       auto;
+                height:      10vh;
+                padding:     0vh 2vh 0vh 2vh;
+                text-align:  right;
+        
+                z-index:     30;
+            }
+        
+                audio {
+                    width:          100%; 
+                    height:         3vh;
+            
+                    border:         1px solid rgba(255, 0, 0, 0.9);
+                    border-radius:  3vh;
+                    box-shadow:     1vh 1vh 1vh rgba(0, 0, 0, 0.3);
+            
+                    z-index:        30;
+                }
+        
+            .footer-image {
+                grid-area:          footer-image;
+                grid-column:        2;
+                grid-row:           1 / 3;
+        
+                margin-top:         -10.2vh;
+                margin-right:       0vh;
+                width:              16.6vh;  /*  19.52vh*0.85=16.592vh (img:305px)  */
+                height:             27.2vh;  /*  32vh*0.85=27.2vh      (img:500px)  */
+                /*transform:          translate(8vw, -16vh);*/
+        
+                background-image:   url("../assets/footer-logo-mobil.png");
+                background-repeat:  no-repeat;
+                background-size:    cover;
+        
+                z-index:            20;
+            }
 }
