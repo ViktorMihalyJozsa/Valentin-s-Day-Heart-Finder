@@ -6,8 +6,8 @@ h1, h2 {
     font-size:       6vh;  /*max(42px, 6vh);  /*  min.:40px - ca.:100px  */
     letter-spacing:  1vh;
     font-weight:     bolder;
-    color:           rgb(139, 0, 0, 1);
-    text-shadow:     1vh 1vh 1vh rgba(68, 68, 68, 1), -2px -2px red;
+    color:           rgba(139, 0, 0, 1);
+    text-shadow:     1vh 1vh 1vh rgba(68, 68, 68, 1), -0.2vh -0.2vh red;
     
     z-index:         20;
   }
@@ -15,22 +15,34 @@ h1, h2 {
       h1 {text-align: left;}
       h2 {text-align: right;} 
 
-  h3, p {
-    font-size:       max(12px, 2.75vh);  /*  min.:12px - ca.:30px  */
+  h3 {
+    font-size:       max(14px, 3vh);  /*  min.:12px - ca.:30px  */
     letter-spacing:  1px;
-    color:           rgba(102, 6, 6, 1);
-    text-shadow:     1px 1px 1px rgba(68, 68, 68, 1), -1px -1px #ffffffdf;
+    /*font-weight:     bold;*/
+    color:           rgba(139, 0, 0, 1);
+    text-shadow:     0.5vh 0.5vh 0.5vh rgba(68, 68, 68, 1), -0.1vh -0.1vh red;
 
     z-index:         20;
   } 
+
+  p {
+    font-size:       max(12px, 2.75vh);  /*  min.:12px - ca.:30px  */
+    letter-spacing:  0.1vh;
+    line-height:     max(12px, 2.75vh);
+    font-weight:     bold;
+    color:           rgba(102, 0, 0, 1);
+    /*text-shadow:     1px 1px 1px rgba(68, 68, 68, 1);*/
+
+    z-index:         20;
+  }
 
   a {
     text-decoration:  none;
     font-size:        max(18px, 3.516vh);  /*  min.:18px - ca.:36px  */
     letter-spacing:   2px;
     font-weight:      bold;
-    color:            rgba(198, 13, 13, 1);
-    text-shadow:      1px 1px 1px rgba(68, 68, 68, 1), -1px -1px #ffffffbf;
+    color:            rgba(139, 0, 0, 1);
+    text-shadow:      0.1vh 0.1vh 0.1vh rgba(68, 68, 68, 1), -0.1vh -0.1vh #ffa500;
 
     z-index:          20;
   }
@@ -41,8 +53,8 @@ h1, h2 {
         font-size:       max(20px, 3.906vh);  /*  min.:20px - ca.:40px  */
         letter-spacing:  4px;
         font-weight:     bold;
-        color:           rgba(198, 13, 13, 1);
-        text-shadow:     1px 1px 1px rgba(68, 68, 68, 1), -1px -1px #ffffffbf;
+        color:           rgba(255, 69, 0, 1);
+        text-shadow:     0.5vh 0.5vh 0.5vh rgba(68, 68, 68, 1), -0.1vh -0.1vh #ffffffbf;
         transition:      all 0.5s ease-in-out;
 
         z-index:         20;
@@ -52,11 +64,12 @@ h1, h2 {
   .audio-text:hover,
   .audio-text:active {
       text-decoration:  none;
-      font-size:        max(14px, 2.777vh);  /*  min.:14px - ca.:30px  */
-      letter-spacing:   1px;
-      font-weight:      normal;
-      color:            rgba(198, 13, 13, 1);
-      text-shadow:      1px 1px 1px rgba(68, 68, 68, 1), -1px -1px #ffffffbf;
+      font-size:        max(12px, 2.75vh);  /*  min.:14px - ca.:30px  */
+      letter-spacing:   0.1vh;
+      line-height:      max(14px, 3vh);
+      font-weight:      bold;
+      color:            rgba(102, 0, 0, 1);
+      text-shadow:      none;
       
       z-index:          20;
   }
