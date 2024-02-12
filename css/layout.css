@@ -117,8 +117,8 @@ header {
             left:               2fr;
             bottom:             0vh;
 
-            width:              45.0vh;  /*  FHD-486px=45vh   (img:360px)  */
-            height:             40.5vh;  /*  FHD-486px=45vh   (img:324px)  */
+            width:              45.0vh;  /*  FHD-486px=45vh   (img:500px)  */
+            height:             40.5vh;  /*  FHD-486px=45vh   (img:450px)  */
 
             background-image:   url("../assets/header-bottom-logo.png");
             background-size:    cover;
@@ -186,8 +186,8 @@ header {
                 left:               2fr;
                 bottom:             -15vh;
     
-                width:              45.0vh;  /*  FHD-486px=45vh   (img:360px)  */
-                height:             40.5vh;  /*  FHD-486px=45vh   (img:324px)  */
+                width:              45.0vh;  /*  FHD-486px=45vh   (img:500px)  */
+                height:             40.5vh;  /*  FHD-486px=45vh   (img:450px)  */
     
                 background-image:   url("../assets/header-bottom-logo.png");
                 background-size:    cover;
@@ -450,8 +450,9 @@ footer {
         audio {
             width:          100%;  /*2fr;*/
             height:         3vh;
+            margin:         0.25vh 0vh 0.25vh 0vh;
     
-            border:         1px solid rgba(255, 0, 0, 0.9);
+            border:         1px solid rgba(139, 0, 0, 1);
             border-radius:  3vh;
             box-shadow:     1vh 1vh 1vh rgba(0, 0, 0, 0.3);
     
@@ -507,11 +508,12 @@ footer {
             audio {
                 width:          100%;  /*2fr;*/
                 height:         3vh;
-        
-                border:         1px solid rgba(255, 0, 0, 0.9);
+                margin:         0.25vh 0vh 0.25vh 0vh;
+    
+                border:         1px solid rgba(139, 0, 0, 1);
                 border-radius:  3vh;
                 box-shadow:     1vh 1vh 1vh rgba(0, 0, 0, 0.3);
-        
+    
                 z-index:        30;
             }
     
@@ -561,13 +563,14 @@ footer {
             }
         
                 audio {
-                    width:          100%; 
+                    width:          100%;  /*2fr;*/
                     height:         3vh;
-            
-                    border:         1px solid rgba(255, 0, 0, 0.9);
+                    margin:         0.25vh 0vh 0.25vh 0vh;
+        
+                    border:         1px solid rgba(139, 0, 0, 1);
                     border-radius:  3vh;
                     box-shadow:     1vh 1vh 1vh rgba(0, 0, 0, 0.3);
-            
+        
                     z-index:        30;
                 }
         
