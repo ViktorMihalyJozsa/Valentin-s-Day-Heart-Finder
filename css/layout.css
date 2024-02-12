@@ -81,7 +81,6 @@ header {
     .header-text {
         width:       auto;
         height:      20vh;
-        text-align:  left;
     }
 
     .header-image {
@@ -427,8 +426,7 @@ footer {
     grid-template-columns:  2fr 1fr;
     grid-template-rows:     auto;
     grid-template-areas: 
-        "footer-text footer-image"
-        "footer-audio footer-image";
+        "footer-text footer-image";
 
     width:                  3fr;
     height:                 auto;
@@ -439,29 +437,18 @@ footer {
 }
 
     .footer-text {
-        grid-area:   footer-text;
+        grid-area:    footer-text;
+        grid-column:  1;
 
-        width:       2fr;
-        height:      6vh;
-        padding:     0.5vh 0vh 0.5vh 2vh;
-        text-align:  left;
+        width:        auto;  /*2fr;*/
+        height:       16vh;
+        padding:      0.5vh 0vh 0.5vh 2vh;
 
-        z-index:     30;
-    }
-
-    .footer-audio {
-        grid-area:   footer-audio;
-
-        width:       2fr;
-        height:      10vh;
-        padding:     0vh 2vh 0vh 2vh;
-        text-align:  right;
-
-        z-index:     30;
+        z-index:      30;
     }
 
         audio {
-            width:          2fr;
+            width:          100%;  /*2fr;*/
             height:         3vh;
     
             border:         1px solid rgba(255, 0, 0, 0.9);
@@ -474,13 +461,11 @@ footer {
     .footer-image {
         grid-area:          footer-image;
         grid-column:        2;
-        grid-row:           1 / 3;
 
         width:              32vh;  /* 500px */
         height:             32vh;  /* 500px */
         margin-top:         -15vh;
         margin-right:       -15vh;
-        /*transform:          translate(8vw, -16vh);*/
 
         background-image:   url("../assets/footer-logo.png");
         background-repeat:  no-repeat;
@@ -498,8 +483,7 @@ footer {
         grid-template-columns:  2fr 1fr;
         grid-template-rows:     auto;
         grid-template-areas: 
-            "footer-text footer-image"
-            "footer-audio footer-image";
+            "footer-text footer-image";
 
         width:                  3fr;
         height:                 auto;
@@ -510,25 +494,14 @@ footer {
     }
     
         .footer-text {
-            grid-area:   footer-text;
+            grid-area:    footer-text;
+            grid-column:  1;
     
-            width:       auto;  /*2fr;*/
-            height:      6vh;
-            padding:     0.5vh 0vh 0.5vh 2vh;
-            text-align:  left;
+            width:        auto;  /*2fr;*/
+            height:       6vh;
+            padding:      0.5vh 0vh 0.5vh 2vh;
     
-            z-index:     30;
-        }
-    
-        .footer-audio {
-            grid-area:   footer-audio;
-    
-            width:       auto;  /*2fr;*/
-            height:      10vh;
-            padding:     0vh 2vh 0vh 2vh;
-            text-align:  right;
-    
-            z-index:     30;
+            z-index:      30;
         }
     
             audio {
@@ -545,13 +518,11 @@ footer {
         .footer-image {
             grid-area:          footer-image;
             grid-column:        2;
-            grid-row:           1 / 3;
     
             width:              32vh;  /* 500px */
             height:             32vh;  /* 500px */
             margin-top:         -15vh;
             margin-right:       -15vh;
-            /*transform:          translate(8vw, -16vh);*/
     
             background-image:   url("../assets/footer-logo.png");
             background-repeat:  no-repeat;
@@ -567,11 +538,10 @@ footer {
             grid-area:              footer;
         
             display:                grid;
-            grid-template-columns:  3fr;
+            grid-template-columns:  1fr;
             grid-template-rows:     auto;
             grid-template-areas: 
-                "footer-text footer-image"
-                "footer-audio footer-image";
+                "footer-text footer-image";
 
             border-right:           none;
             border-left:            none;
@@ -579,25 +549,15 @@ footer {
         }
         
             .footer-text {
-                grid-area:   footer-text;
+                grid-area:    footer-text;
+                grid-column:  1;
         
-                width:       auto;
-                height:      6vh;
-                padding:     0.5vh 0vh 0.5vh 2vh;
-                text-align:  left;
+                width:        auto;
+                height:       16vh;
+                padding:      0.5vh 0vh 0.5vh 2vh;
+                text-align:   left;
         
-                z-index:     30;
-            }
-        
-            .footer-audio {
-                grid-area:   footer-audio;
-        
-                width:       auto;
-                height:      10vh;
-                padding:     0vh 2vh 0vh 2vh;
-                text-align:  right;
-        
-                z-index:     30;
+                z-index:      30;
             }
         
                 audio {
@@ -614,13 +574,11 @@ footer {
             .footer-image {
                 grid-area:          footer-image;
                 grid-column:        2;
-                grid-row:           1 / 3;
         
                 margin-top:         -10.2vh;
                 margin-right:       0vh;
                 width:              16.6vh;  /*  19.52vh*0.85=16.592vh (img:305px)  */
                 height:             27.2vh;  /*  32vh*0.85=27.2vh      (img:500px)  */
-                /*transform:          translate(8vw, -16vh);*/
         
                 background-image:   url("../assets/footer-logo-mobil.png");
                 background-repeat:  no-repeat;
