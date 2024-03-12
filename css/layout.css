@@ -421,37 +421,30 @@ main {
 \*  ========================================================================  */
 
 footer {
-    grid-area:              footer;
+    grid-area:       footer;
 
-    display:                grid;
-    grid-template-columns:  2fr 1fr;
-    grid-template-rows:     auto;
-    grid-template-areas: 
-        "footer-text footer-image";
+    width:           3fr;
+    height:          auto;
 
-    width:                  3fr;
-    height:                 auto;
-
-    border-right:           1px solid red;
-    border-left:            1px solid red;
-    box-shadow:             1vh 1vh 1vh rgba(0, 0, 0, 0.5);
+    border-right:    1px solid red;
+    border-left:     1px solid red;
+    box-shadow:      1vh 1vh 1vh rgba(0, 0, 0, 0.5);
 }
 
     .footer-text {
-        grid-area:    footer-text;
-        grid-column:  1;
+        float:    left;
 
-        width:        auto;  /*2fr;*/
-        height:       16vh;
-        padding:      0.5vh 0vh 0.5vh 2vh;
+        width:    calc(100% - 2vh - 35%);  /*  min.: 62%  -  2vh = 3%  */
+        height:   16vh;
+        padding:  0.5vh 35% 0.5vh 2vh;
 
-        z-index:      30;
+        z-index:  30;
     }
 
         audio {
-            width:          100%;  /*2fr;*/
+            width:          100%; 
             height:         3vh;
-            margin:         0.25vh 0vh 0.25vh 0vh;
+            margin:         0.5vh 0vh 0.5vh 0vh;
     
             border:         1px solid rgba(139, 0, 0, 1);
             border-radius:  3vh;
@@ -461,13 +454,13 @@ footer {
         }
 
     .footer-image {
-        grid-area:          footer-image;
-        grid-column:        2;
+        float:              right;
 
-        width:              32vh;  /* 500px */
-        height:             32vh;  /* 500px */
-        margin-top:         -15vh;
-        margin-right:       -15vh;
+        width:              32vh;   /*  img.size: 500px = 32vh  */
+        height:             32vh;   /*  img.size: 500px = 32vh  */
+
+        margin-top:         -32vh;  /*  image-height  */
+        margin-right:       -20vh;  /*  desing-size  */
 
         background-image:   url("../assets/footer-logo.png");
         background-repeat:  no-repeat;
@@ -479,53 +472,98 @@ footer {
 
 @media(max-width: 1025px) {
     footer {
-        grid-area:              footer;
+        grid-area:       footer;
     
-        display:                grid;
-        grid-template-columns:  2fr 1fr;
-        grid-template-rows:     auto;
-        grid-template-areas: 
-            "footer-text footer-image";
-
-        width:                  3fr;
-        height:                 auto;
+        width:           3fr;
+        height:          auto;
     
-        border-right:           1px solid red;
-        border-left:            1px solid red;
-        box-shadow:             1vh 1vh 1vh rgba(0, 0, 0, 0.5);
+        border-right:    1px solid red;
+        border-left:     1px solid red;
+        box-shadow:      1vh 1vh 1vh rgba(0, 0, 0, 0.5);
     }
     
         .footer-text {
-            grid-area:    footer-text;
-            grid-column:  1;
+            float:    left;
     
-            width:        auto;  /*2fr;*/
-            height:       6vh;
-            padding:      0.5vh 0vh 0.5vh 2vh;
+            width:    calc(100% - 2vh - 35%);  /*  min.: 62%  -  2vh = 3%  */
+            height:   16vh;
+            padding:  0.5vh 35% 0.5vh 2vh;
     
-            z-index:      30;
+            z-index:  30;
         }
     
             audio {
-                width:          100%;  /*2fr;*/
+                width:          100%; 
                 height:         3vh;
-                margin:         0.25vh 0vh 0.25vh 0vh;
-    
+                margin:         0.5vh 0vh 0.5vh 0vh;
+        
                 border:         1px solid rgba(139, 0, 0, 1);
                 border-radius:  3vh;
                 box-shadow:     1vh 1vh 1vh rgba(0, 0, 0, 0.3);
-    
+        
                 z-index:        30;
             }
     
         .footer-image {
-            grid-area:          footer-image;
-            grid-column:        2;
+            float:              right;
     
-            width:              32vh;  /* 500px */
-            height:             32vh;  /* 500px */
-            margin-top:         -15vh;
-            margin-right:       -15vh;
+            width:              32vh;   /*  img.size: 500px = 32vh  */
+            height:             32vh;   /*  img.size: 500px = 32vh  */
+    
+            margin-top:         -32vh;  /*  image-height  */
+            margin-right:       -20vh;  /*  desing-size  */
+    
+            background-image:   url("../assets/footer-logo.png");
+            background-repeat:  no-repeat;
+            background-size:    cover;
+    
+            z-index:            20;
+        }
+}
+
+
+@media(max-width: 1025px) {
+    footer {
+        grid-area:       footer;
+    
+        width:           3fr;
+        height:          auto;
+    
+        border-right:    1px solid green;
+        border-left:     1px solid green;
+        box-shadow:      1vh 1vh 1vh rgba(0, 0, 0, 0.5);
+    }
+    
+        .footer-text {
+            float:    left;
+
+            width:    calc(100% - 2vh - 35%);  /*  min.: 62%  -  2vh = 3%  */
+            height:   16vh;
+            padding:  0.5vh 35% 0.5vh 2vh;
+
+            z-index:  30;
+        }
+    
+            audio {
+                width:          100%; 
+                height:         3vh;
+                margin:         0.5vh 0vh 0.5vh 0vh;
+        
+                border:         1px solid rgba(139, 0, 0, 1);
+                border-radius:  3vh;
+                box-shadow:     1vh 1vh 1vh rgba(0, 0, 0, 0.3);
+        
+                z-index:        30;
+            }
+    
+        .footer-image {
+            float:              right;
+    
+            width:              32vh;   /*  img.size: 500px = 32vh  */
+            height:             32vh;   /*  img.size: 500px = 32vh  */
+    
+            margin-top:         -32vh;  /*  image-height  */
+            margin-right:       -20vh;  /*  desing-size  */
     
             background-image:   url("../assets/footer-logo.png");
             background-repeat:  no-repeat;
@@ -537,36 +575,31 @@ footer {
 
 
 @media(max-width: 768px) {
-        footer {
-            grid-area:              footer;
-        
-            display:                grid;
-            grid-template-columns:  1fr;
-            grid-template-rows:     auto;
-            grid-template-areas: 
-                "footer-text footer-image";
-
-            border-right:           none;
-            border-left:            none;
-            box-shadow:             none;
-        }
+    footer {
+        grid-area:       footer;
+    
+        width:           1fr;
+        height:          auto;
+    
+        border-right:    1px solid red;
+        border-left:     1px solid red;
+        box-shadow:      1vh 1vh 1vh rgba(0, 0, 0, 0.5);
+    }
         
             .footer-text {
-                grid-area:    footer-text;
-                grid-column:  1;
+                float:    left;
+
+                width:    calc(100% - 2vh - 35%);  /*  min.: 62%  -  2vh = 3%  */
+                height:   16vh;
+                padding:  0.5vh 35% 0.5vh 2vh;
         
-                width:        auto;
-                height:       16vh;
-                padding:      0.5vh 0vh 0.5vh 2vh;
-                text-align:   left;
-        
-                z-index:      30;
+                z-index:  30;
             }
         
                 audio {
                     width:          100%;  /*2fr;*/
                     height:         3vh;
-                    margin:         0.25vh 0vh 0.25vh 0vh;
+                    margin:         0.5vh 0vh 0.5vh 0vh;
         
                     border:         1px solid rgba(139, 0, 0, 1);
                     border-radius:  3vh;
@@ -576,13 +609,13 @@ footer {
                 }
         
             .footer-image {
-                grid-area:          footer-image;
-                grid-column:        2;
-        
-                margin-top:         -10.2vh;
-                margin-right:       0vh;
-                width:              16.6vh;  /*  19.52vh*0.85=16.592vh (img:305px)  */
-                height:             27.2vh;  /*  32vh*0.85=27.2vh      (img:500px)  */
+                float:              right;
+
+                margin-top:         -25.6vh;  /*  image-height  */
+                margin-right:       0vh;      /*  0vh  */
+
+                width:              19.456vh;  /*  380px/500px=0.76*25.6=19.456  -  (img:380px)  */
+                height:             25.6vh;    /*  32vh*0.8=25.6vh               -  (img:500px)  */
         
                 background-image:   url("../assets/footer-logo-mobil.png");
                 background-repeat:  no-repeat;
