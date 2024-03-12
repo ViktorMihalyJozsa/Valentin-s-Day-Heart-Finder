@@ -185,7 +185,7 @@ header {
                 position:           absolute;
                 float:              left;
                 left:               2fr;
-                bottom:             -15vh;
+                bottom:             -10vh;
     
                 width:              45.0vh;  /*  FHD-486px=45vh   (img:500px)  */
                 height:             45.0vh;  /*  FHD-486px=45vh   (img:500px)  */
