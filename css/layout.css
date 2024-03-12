@@ -522,58 +522,6 @@ footer {
 }
 
 
-@media(max-width: 1025px) {
-    footer {
-        grid-area:       footer;
-    
-        width:           3fr;
-        height:          auto;
-    
-        border-right:    1px solid green;
-        border-left:     1px solid green;
-        box-shadow:      1vh 1vh 1vh rgba(0, 0, 0, 0.5);
-    }
-    
-        .footer-text {
-            float:    left;
-
-            width:    calc(100% - 2vh - 35%);  /*  min.: 62%  -  2vh = 3%  */
-            height:   16vh;
-            padding:  0.5vh 35% 0.5vh 2vh;
-
-            z-index:  30;
-        }
-    
-            audio {
-                width:          100%; 
-                height:         3vh;
-                margin:         0.5vh 0vh 0.5vh 0vh;
-        
-                border:         1px solid rgba(139, 0, 0, 1);
-                border-radius:  3vh;
-                box-shadow:     1vh 1vh 1vh rgba(0, 0, 0, 0.3);
-        
-                z-index:        30;
-            }
-    
-        .footer-image {
-            float:              right;
-    
-            width:              32vh;   /*  img.size: 500px = 32vh  */
-            height:             32vh;   /*  img.size: 500px = 32vh  */
-    
-            margin-top:         -32vh;  /*  image-height  */
-            margin-right:       -20vh;  /*  desing-size  */
-    
-            background-image:   url("../assets/footer-logo.png");
-            background-repeat:  no-repeat;
-            background-size:    cover;
-    
-            z-index:            20;
-        }
-}
-
-
 @media(max-width: 768px) {
     footer {
         grid-area:       footer;
