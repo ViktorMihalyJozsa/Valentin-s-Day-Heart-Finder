@@ -327,14 +327,16 @@ main {
         margin:           0vh 0vh 2vh 0vh;
       }
 
-          .text-on-image {
+          .left-button,
+          .right-button {
               position:         relative;
+
               display:          flex;
               justify-content:  center;
               align-items:      center;
           }
 
-              .ui-element {
+              .element {
                   width:          12.5vh;
                   height:         6vh;
 
@@ -342,11 +344,12 @@ main {
                   box-shadow:     1vh 1vh 1vh rgba(0, 0, 0, 0.5);
               }
       
-              .number-overlay {
+              .number {
                   position:        absolute;
                   text-align:      center;
     
-                  width:           100%;
+                  width:           auto;
+                  height:          auto;
 
                   font-size:       5vh;
                   letter-spacing:  1vh;
@@ -355,7 +358,7 @@ main {
                   text-shadow:     1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
               }
 
-          .button {
+          .center-button {
               cursor:         pointer;
 
               width:          15vh;
@@ -375,12 +378,11 @@ main {
         display:          flex;
         align-items:      center;
         justify-content:  center;
-      }
 
-      .canvas-element {
-        cursor:      pointer;
-        box-shadow:  1vh 1vh 1vh rgba(0, 0, 0, 0.5);
-        z-index:     100;
+        cursor:           pointer;
+        box-shadow:       1vh 1vh 1vh rgba(0, 0, 0, 0.5);
+
+        z-index:          100;
       }
 
 
