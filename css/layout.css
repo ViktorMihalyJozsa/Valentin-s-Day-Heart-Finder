@@ -54,7 +54,7 @@ header {
 
     .header-text {
         width:    3fr;
-        height:   20vh;
+        height:   25vh;
         padding:  5vh 2vh 0vh 0vh;
     }
 
@@ -115,7 +115,7 @@ header {
     
         .header-text {
             width:    3fr;
-            height:   20vh;
+            height:   25vh;
             padding:  5vh 2vh 0vh 0vh;
         }
     
@@ -186,7 +186,7 @@ header {
 
         .header-text {
             width:    auto;  /*1fr;*/
-            height:   18vh;
+            height:   25vh;
             padding:  5vh 2vh 2vh 2vh;
         }
 
@@ -411,8 +411,8 @@ footer {
     .footer-text {
         float:    left;
 
-        width:    calc(100% - 2vh - 30%);  /*  min.: 62%  -  2vh = 3%  */
-        height:   16vh;
+        width:    67vh;  /*  calc(100% - 2vh - 30%);  /*  min.: 62%  -  2vh = 3%  */
+        height:   17vh;
         padding:  0.5vh 30% 0.5vh 2vh;
 
         z-index:  30;
@@ -437,7 +437,7 @@ footer {
         height:             32vh;   /*  img.size: 500px = 32vh  */
 
         margin-top:         -32vh;  /*  image-height  */
-        margin-right:       -20vh;  /*  desing-size  */
+        margin-right:       -16vh;  /*  desing-size  */
 
         background-image:   url("../assets/footer-logo.png");
         background-repeat:  no-repeat;
@@ -462,8 +462,8 @@ footer {
         .footer-text {
             float:    left;
     
-            width:    calc(100% - 2vh - 30%);  /*  min.: 62%  -  2vh = 3%  */
-            height:   16vh;
+            width:    67vh;  /*  calc(100% - 2vh - 30%);  /*  min.: 62%  -  2vh = 3%  */
+            height:   17vh;
             padding:  0.5vh 30% 0.5vh 2vh;
     
             z-index:  30;
@@ -488,7 +488,7 @@ footer {
             height:             32vh;   /*  img.size: 500px = 32vh  */
     
             margin-top:         -32vh;  /*  image-height  */
-            margin-right:       -20vh;  /*  desing-size  */
+            margin-right:       -16vh;  /*  desing-size  */
     
             background-image:   url("../assets/footer-logo.png");
             background-repeat:  no-repeat;
@@ -514,8 +514,8 @@ footer {
             .footer-text {
                 float:    left;
 
-                width:    calc(100% - 2vh - 35%);  /*  min.: 62%  -  2vh = 3%  */
-                height:   16vh;
+                width:    100%;  /*  calc(100% - 2vh - 35%);  /*  min.: 62%  -  2vh = 3%  */
+                height:   17vh;
                 padding:  0.5vh 35% 0.5vh 2vh;
         
                 z-index:  30;

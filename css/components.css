@@ -9,7 +9,7 @@ h1, h2 {
     color:           rgba(139, 0, 0, 1);
     text-shadow:     1vh 1vh 1vh rgba(68, 68, 68, 1), -0.2vh -0.2vh red;
     
-    z-index:         20;
+    z-index:         100;
   }
 
       h1 {text-align: left;}
@@ -22,7 +22,7 @@ h1, h2 {
     color:           rgba(139, 0, 0, 1);
     text-shadow:     0.5vh 0.5vh 0.5vh rgba(68, 68, 68, 1), -0.1vh -0.1vh red;
 
-    z-index:         20;
+    z-index:         100;
   } 
 
       h3 {text-align: left;}
@@ -37,7 +37,7 @@ h1, h2 {
     text-shadow:     none;
     color:           rgba(102, 0, 0, 1);
 
-    z-index:         20;
+    z-index:         100;
   }
 
       h4 {text-align: left;}
@@ -54,7 +54,7 @@ h1, h2 {
           text-shadow:      0.5vh 0.5vh 0.5vh rgba(68, 68, 68, 1), -0.1vh -0.1vh black;
           transition:       all 0.5s ease-in-out;
       
-          z-index:          20;
+          z-index:          100;
       }
 
   .vmj-icon {
@@ -65,7 +65,7 @@ h1, h2 {
     color:            rgba(139, 0, 0, 1);
     text-shadow:      0.1vh 0.1vh 0.1vh rgba(68, 68, 68, 1), -0.1vh -0.1vh #ffa500;
 
-    z-index:          20;
+    z-index:          100;
   }
 
       .vmj-icon:hover,
@@ -78,7 +78,7 @@ h1, h2 {
         text-shadow:     0.5vh 0.5vh 0.5vh rgba(68, 68, 68, 1), -0.1vh -0.1vh black;
         transition:      all 0.5s ease-in-out;
 
-        z-index:         20;
+        z-index:         100;
       }
 
 
