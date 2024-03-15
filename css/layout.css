@@ -249,6 +249,7 @@ main {
     grid-area:            main;
 
     display:              flex;
+    flex-direction:       column;
     justify-content:      center;
     align-items:          center;
 
@@ -271,6 +272,7 @@ main {
         grid-area:            main;
     
         display:              flex;
+        flex-direction:       column;
         justify-content:      center;
         align-items:          center;
     
@@ -294,6 +296,7 @@ main {
         grid-area:            main;
     
         display:              flex;
+        flex-direction:       column;
         justify-content:      center;
         align-items:          center;
     
@@ -319,9 +322,9 @@ main {
       .control-panel {
         display:          flex;
         align-items:      center;
-        justify-content:  space-between;
+        justify-content:  center;
 
-        margin:           2vh 0vh 2vh 0vh;
+        margin:           0vh 0vh 2vh 0vh;
       }
 
           .text-on-image {
@@ -334,6 +337,7 @@ main {
               .ui-element {
                   width:          12.5vh;
                   height:         6vh;
+
                   border-radius:  1vh;
                   box-shadow:     1vh 1vh 1vh rgba(0, 0, 0, 0.5);
               }
@@ -343,6 +347,7 @@ main {
                   text-align:      center;
     
                   width:           100%;
+
                   font-size:       5vh;
                   letter-spacing:  1vh;
                   font-weight:     bold;
@@ -352,8 +357,11 @@ main {
 
           .button {
               cursor:         pointer;
+
               width:          15vh;
               height:         12vh;
+              margin:         0vh 4.125vh 0vh 4.125vh;
+
               border-radius:  2.4vh;
               box-shadow:     1vh 1vh 1vh rgba(0, 0, 0, 0.5);
           }
