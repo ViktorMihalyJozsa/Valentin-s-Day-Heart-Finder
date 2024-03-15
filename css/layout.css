@@ -189,18 +189,18 @@ header {
         display:         flex;
         flex-direction:  column;
 
-        width:           1fr;
+        width:           auto;
         height:          auto;
     }
 
         .header-text {
-            width:    1fr;
+            width:    auto;
             height:   18vh;
             padding:  5vh 2vh 2vh 2vh;
         }
 
         .header-image {
-            width:   1fr;
+            width:   auto;
             height:  75vh;
         }
 
@@ -313,7 +313,7 @@ main {
         justify-content:      center;
         align-items:          center;
     
-        width:                1fr;
+        width:                auto;
         height:               90vh;
 
         background-image:     url("../assets/game-background.png");
@@ -502,7 +502,7 @@ footer {
     footer {
         grid-area:       footer;
     
-        width:           1fr;
+        width:           auto;
         height:          auto;
     
         border-right:    1px solid red;
