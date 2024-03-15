@@ -319,55 +319,60 @@ main {
         C O N T R O L  P A N E L
     \*  ========================================================================  */
 
-      .control-panel {
+    .control-panel {
         display:          flex;
-        justify-content:  space-evenly;
+        justify-content:  space-between;
         align-items:      center;
 
-        width:            100%;
+        width:            48vh;  /*  canvas.width = 12(colums) * size(bodyHeight*0.04) - finder.js  */
+        height:           auto;
         margin:           0vh 0vh 2vh 0vh;
-      }
+    }
 
-          .left-button,
-          .right-button {
-              position:         relative;
+        .left-button,
+        .right-button {
+            display:          flex;
+            justify-content:  center;
+            align-items:      center;
+        }
 
-              display:          flex;
-              justify-content:  center;
-              align-items:      center;
-          }
+            .element {
+                width:          12.5vh;
+                height:         6vh;
 
-              .element {
-                  width:          12.5vh;
-                  height:         6vh;
-
-                  border-radius:  1vh;
-                  box-shadow:     1vh 1vh 1vh rgba(0, 0, 0, 0.5);
-              }
+                border-radius:  1vh;
+                box-shadow:     1vh 1vh 1vh rgba(0, 0, 0, 0.5);
+            }
       
-              .number {
-                  position:        absolute;
-                  text-align:      center;
+            .number {
+                position:        absolute;
+                text-align:      center;
     
-                  width:           auto;
-                  height:          auto;
+                width:           auto;
+                height:          auto;
 
-                  font-size:       5vh;
-                  letter-spacing:  1vh;
-                  font-weight:     bold;
-                  color:           rgba(102, 6, 6, 0.75);
-                  text-shadow:     1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
-              }
+                font-size:       5vh;
+                letter-spacing:  1vh;
+                font-weight:     bold;
+                color:           rgba(102, 6, 6, 0.75);
+                text-shadow:     1px 1px rgba(255, 255, 255, 0.75), -1px -1px #444;
+            }
 
-          .center-button {
-              cursor:         pointer;
+        .center-button {
+            cursor:         pointer;
 
-              width:          15vh;
-              height:         12vh;
+            width:          15vh;
+            height:         12vh;
 
-              border-radius:  2.4vh;
-              box-shadow:     1vh 1vh 1vh rgba(0, 0, 0, 0.5);
-          }
+            border-radius:  2.4vh;
+            box-shadow:     1vh 1vh 1vh rgba(0, 0, 0, 0.5);
+        }
+
+          
+    @media(max-width: 1025px) {}
+    
+    
+    @media(max-width: 768px) {}
 
   
     /*  ========================================================================  *\
