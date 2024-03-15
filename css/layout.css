@@ -381,7 +381,7 @@ main {
         C A N V A S
     \*  ========================================================================  */
 
-      .myCanvas {
+      #myCanvas {
         display:          flex;
         align-items:      center;
         justify-content:  center;
