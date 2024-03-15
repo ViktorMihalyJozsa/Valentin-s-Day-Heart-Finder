@@ -319,7 +319,7 @@ main {
         C O N T R O L  P A N E L
     \*  ========================================================================  */
 
-    .control-panel {
+    #control-panel {
         display:          flex;
         justify-content:  space-between;
         align-items:      center;
@@ -331,6 +331,8 @@ main {
 
         .left-button,
         .right-button {
+            position:         relative;
+
             display:          flex;
             justify-content:  center;
             align-items:      center;
