@@ -267,8 +267,10 @@ main {
 }
 
     .myMain {
-        width:   auto;
-        height:  auto;
+        width:    auto;
+        height:   auto;
+
+        z-index:  100;
     }
 
 
@@ -297,6 +299,8 @@ main {
     .myMain {
         width:   auto;
         height:  auto;
+
+        z-index:  100;
     }
 }
 
@@ -326,6 +330,8 @@ main {
     .myMain {
         width:   auto;
         height:  auto;
+
+        z-index:  100;
     }
 }
 
