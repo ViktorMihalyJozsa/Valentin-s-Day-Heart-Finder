@@ -426,7 +426,7 @@ footer {
     .footer-text {
         float:    left;
 
-        width:    67vh;  /*  calc(100% - 2vh - 30%);  /*  min.: 62%  -  2vh = 3%  */
+        width:    100%;  /*  calc(100% - 2vh - 30%);  /*  min.: 62%  -  2vh = 3%  */
         height:   17vh;
         padding:  0.5vh 30% 0.5vh 2vh;
 
@@ -477,7 +477,7 @@ footer {
         .footer-text {
             float:    left;
     
-            width:    67vh;  /*  calc(100% - 2vh - 30%);  /*  min.: 62%  -  2vh = 3%  */
+            width:    100%;  /*  calc(100% - 2vh - 30%);  /*  min.: 62%  -  2vh = 3%  */
             height:   17vh;
             padding:  0.5vh 30% 0.5vh 2vh;
     
