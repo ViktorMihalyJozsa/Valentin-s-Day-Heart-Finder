@@ -100,7 +100,7 @@ header {background-color: blue; z-index: 0;}
         .header-bottom-right-image {background-color: lightgoldenrodyellow; z-index: 0;}
 
 main {background-color: yellow; z-index: 0;}
-    .control-panel {background-color: blueviolet; z-index: 0;}
+    #control-panel {background-color: blueviolet; z-index: 0;}
 
 footer {background-color: darkgreen; z-index: 0;}
     .footer-text {background-color: aqua; z-index: 0;}

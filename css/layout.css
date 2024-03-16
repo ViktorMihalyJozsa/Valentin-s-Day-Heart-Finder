@@ -266,6 +266,11 @@ main {
     box-shadow:           1vh 1vh 1vh rgba(0, 0, 0, 0.5);
 }
 
+    .myMain {
+        width:   auto;
+        height:  auto;
+    }
+
 
 @media(max-width: 1025px) {
     main {
@@ -287,6 +292,11 @@ main {
         border-right:         1px solid red;
         border-left:          1px solid red;
         box-shadow:           1vh 1vh 1vh rgba(0, 0, 0, 0.5);
+    }
+
+    .myMain {
+        width:   auto;
+        height:  auto;
     }
 }
 
@@ -312,6 +322,11 @@ main {
         border-left:          1px solid red;
         box-shadow:           1vh 1vh 1vh rgba(0, 0, 0, 0.5);
     }
+
+    .myMain {
+        width:   auto;
+        height:  auto;
+    }
 }
 
 
@@ -324,7 +339,7 @@ main {
         justify-content:  space-between;
         align-items:      center;
 
-        width:            48vh;  /*  canvas.width = 12(colums) * size(bodyHeight*0.04) - finder.js  */
+        width:            auto;  /*  100%;  /*  48vh;  /*  canvas.width = 12(colums) * size(bodyHeight*0.04) - finder.js  */
         height:           auto;
         margin:           0vh 0vh 2vh 0vh;
     }
@@ -369,12 +384,6 @@ main {
             border-radius:  2.4vh;
             box-shadow:     1vh 1vh 1vh rgba(0, 0, 0, 0.5);
         }
-
-          
-    @media(max-width: 1025px) {}
-    
-    
-    @media(max-width: 768px) {}
 
   
     /*  ========================================================================  *\
