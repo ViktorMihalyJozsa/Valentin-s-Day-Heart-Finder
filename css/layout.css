@@ -59,22 +59,28 @@ header {
     }
 
     .header-image {
-        width:   3fr;
-        height:  75vh;
+        position:  relative;
+
+        width:     3fr;
+        height:    75vh;
     }
 
         .header-top-image-text {
-            float:   left;
+            position:  absolute;
+            top:       0;
+            left:      0;
 
-            width:   calc(100% - 17.777vh);  /*  45vh;  /*  FHD=456px=42.222vh  2fr = 20% = 20vw  */
-            height:  calc(100% - 45vh);      /*  FHD-400px=(37.685vh)37vh  */
+            width:     66%;   /*  45vh;  /*  FHD=456px=42.222vh  2fr = 20% = 20vw  */
+            height:    100%;  /*  FHD-400px=(37.685vh)37vh  */
         }
 
         .header-top-image {
-            float:         right;
+            position:      absolute;
+            top:           0;
+            right:         0;
 
-            width:         17.77vh;  /*  FHD-192px=17.777vh  (img:240px)  1/3fr=33.333%  */
-            height:        26.66vh;  /*  FHD-400px=26.664vh  (img:360px)                 */
+            width:         24.75vh;  /*  FHD-192px=17.777vh  (img:330px)  1/3fr=33.333%  */
+            height:        30vh;     /*  FHD-400px=26.664vh  (img:400px)                 */
 
             margin-top:    0vh;      /*  0vh;  */
             margin-right:  0vh;      /*  MINUS: margin-right(NOT Minus .myCanvas"padding") = -2vh    */
@@ -83,16 +89,18 @@ header {
         }
 
         .header-bottom-left-image {
-            float:    left;
+            position:  absolute;
+            bottom:    0;
+            left:      0;
 
-            width:    45.0vh;  /*  FHD-486px=45vh   (img:500px)  */
-            height:   45.0vh;  /*  FHD-486px=45vh   (img:500px)  */
+            width:     45.0vh;  /*  FHD-486px=45vh   (img:500px)  */
+            height:    45.0vh;  /*  FHD-486px=45vh   (img:500px)  */
 
-            z-index:  10;
+            z-index:   10;
         }
 
         .header-bottom-right-image {
-            float:       right;
+            position:    absolute;
 
             width:       54vh;
             height:      45vh;
@@ -120,47 +128,53 @@ header {
         }
     
         .header-image {
-            width:   3fr;
-            height:  75vh;
+            position:  relative;
+    
+            width:     3fr;
+            height:    75vh;
         }
     
             .header-top-image-text {
-                float:   left;
+                position:  absolute;
+                top:       0;
+                left:      0;
     
-                width:   calc(100% - 17.777vh);  /*  45vh;  /*  FHD=456px=42.222vh  2fr = 20% = 20vw  */
-                height:  calc(100% - 45vh);      /*  FHD-400px=(37.685vh)37vh  */
+                width:     66%;   /*  45vh;  /*  FHD=456px=42.222vh  2fr = 20% = 20vw  */
+                height:    100%;  /*  FHD-400px=(37.685vh)37vh  */
             }
     
             .header-top-image {
-                float:         right;
-
-                width:         17.77vh;  /*  FHD-192px=17.777vh  (img:240px)  1/3fr=33.333%  */
-                height:        26.66vh;  /*  FHD-400px=26.664vh  (img:360px)                 */
-
+                position:      absolute;
+                top:           0;
+                right:         0;
+    
+                width:         24.75vh;  /*  FHD-192px=17.777vh  (img:330px)  1/3fr=33.333%  */
+                height:        30vh;     /*  FHD-400px=26.664vh  (img:400px)                 */
+    
                 margin-top:    0vh;      /*  0vh;  */
                 margin-right:  0vh;      /*  MINUS: margin-right(NOT Minus .myCanvas"padding") = -2vh    */
-
+    
                 z-index:       10;
             }
     
             .header-bottom-left-image {
-                float:          left;
+                position:  absolute;
+                bottom:    0;
+                left:      0;
     
-                width:          45.0vh;  /*  FHD-486px=45vh   (img:500px)  */
-                height:         45.0vh;  /*  FHD-486px=45vh   (img:500px)  */
-
-                margin-bottom:  -12vh;
+                width:     45.0vh;  /*  FHD-486px=45vh   (img:500px)  */
+                height:    45.0vh;  /*  FHD-486px=45vh   (img:500px)  */
     
-                z-index:        10;
+                z-index:   10;
             }
     
             .header-bottom-right-image {
-                float:       right;
+                position:    absolute;
     
                 width:       54vh;
                 height:      45vh;
     
-                margin-top:  -33vh;  /*  height(45vh) - margin-bottom(12vh)  */
+                margin-top:  -45vh;
     
                 z-index:     20;
             }
@@ -191,51 +205,56 @@ header {
         }
 
         .header-image {
-            width:   auto;  /*1fr;*/
-            height:  75vh;
+            position:  relative;
+    
+            width:     3fr;
+            height:    75vh;
         }
-
+    
             .header-top-image-text {
-                float:    left;
-
-                width:    calc(100% - 15.11vh);  /*  Mobil(1600x720)-456px/13.2=34vh ~ MINUS: Header-padding(2vh)=32vh !!!  2/3fr=66.666%  */
-                height:   calc(100% - 34.425vh);
-                padding:  0vh 0vh 0vh 2vh;
-
-                z-index:  20;
+                position:  absolute;
+                top:       0;
+                left:      0;
+    
+                width:     60%;   /*  45vh;  /*  FHD=456px=42.222vh  2fr = 20% = 20vw  */
+                height:    100%;  /*  FHD-400px=(37.685vh)37vh  */
+                padding:   0vh 0vh 0vh 2vh;
             }
-
+    
             .header-top-image {
-                float:         right;
-
-                width:         15.11vh;  /*  FHD-192px=17.777vh*0.85=15.11vh (img:240px)  1/3fr=33.333%  */
-                height:        22.66vh;  /*  FHD-400px=26.664vh*0.85=22.66vh (img:360px)                 */
-
-                margin-top:    0vh;      /*  0vh;  */
-                margin-right:  0vh;      /*  MINUS: margin-right(NOT Minus .myCanvas"padding") = -2vh    */
-
+                position:      absolute;
+                top:           0;
+                right:         0;
+    
+                width:         20vh;  /*  FHD-300px=24.75vh*0.8=19.80vh  (img:330px)  1/3fr=33.333%  */
+                height:        24vh;  /*  FHD-400px=30.00vh*0.8=24.00vh  (img:400px)                 */
+    
+                margin-top:    0vh;   /*  0vh;  */
+                margin-right:  0vh;   /*  MINUS: margin-right(NOT Minus .myCanvas"padding") = -2vh    */
+    
                 z-index:       10;
             }
-
+    
             .header-bottom-left-image {
-                float:          left;
-
-                width:          34.425vh;  /*  FHD-486px=45vh*0.85=38.25vh (img:500px)  */
-                height:         34.425vh;  /*  FHD-486px=45vh*0.85=38.25vh (img:500px)  */
-
-                margin-bottom:  0vh;
-
-                z-index:        10;
+                position:  absolute;
+                bottom:    0;
+                left:      0;
+    
+                width:     38.0vh;  /*  FHD-486px=45vh*0.8=36.0vh + padding-left(2vh)   (img:500px)  */
+                height:    38.0vh;  /*  FHD-486px=45vh*0.8=36.0vh + pading-bottom(2vh)  (img:500px)  */
+                padding:   0vh 0vh 2vh 2vh;
+    
+                z-index:   10;
             }
-
+    
             .header-bottom-right-image {
-                float:       right;
-
-                width:       41.310vh;  /*  FHD-486px=45vh*0.85=38.25vh (img:600px)  */
-                height:      34.425vh;  /*  FHD-486px=45vh*0.85=38.25vh (img:500px)  */
-
-                margin-top:  -34.425vh;
-
+                position:    absolute;
+    
+                width:       54vh;
+                height:      45vh;
+    
+                margin-top:  -45vh;
+    
                 z-index:     20;
             }
 }
